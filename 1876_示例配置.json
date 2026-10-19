@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "dataset_id": "demo-orders",
+  "seed": 20261019,
+  "rows": 10000,
+  "fields": [
+    {"name": "order_number", "type": "sequence", "start": 100001, "step": 1},
+    {"name": "region", "type": "choice", "values": ["North", "South", "East", "West"]},
+    {"name": "quantity", "type": "integer", "min": 1, "max": 50},
+    {"name": "unit_price", "type": "decimal", "min": "5.00", "max": "499.99", "places": 2},
+    {"name": "order_date", "type": "date", "min": "2026-01-01", "max": "2026-10-19"},
+    {"name": "active", "type": "boolean", "true_probability": "0.8"}
+  ]
+}

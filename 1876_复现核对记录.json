@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "checked_at_utc": "2026-10-19T08:20:23+00:00",
+  "config": "1876_示例配置.json",
+  "baseline_directory": "1876_示例结果",
+  "counts": {
+    "rows": 10000,
+    "unique_ids": 10000,
+    "sqlite_rows": 10000,
+    "verified_matches": 10000
+  },
+  "displayed_counters": {
+    "rows": "10,000",
+    "unique_ids": "10,000",
+    "sqlite_rows": "10,000",
+    "verified_matches": "10,000"
+  },
+  "checks": {
+    "csv_bytes_equal": true,
+    "ordered_sql_rows_equal": true,
+    "csv_sql_values_equal": true,
+    "independent_logical_hash_equal": true,
+    "source_config_unchanged": true,
+    "baseline_outputs_unchanged": true,
+    "output_edit_during_generation_verified": true,
+    "report_button_uri_matches_actual_output": true,
+    "edited_output_not_created": true,
+    "temporary_directory_cleanup_succeeded": true
+  },
+  "source_config_sha256": "7c17e83c44aa6c98d92ad812f64e8501bb9b7c01c447c6fbc13a0032709dc430",
+  "csv_sha256": "32f401e7133a357171bf53977a00ab667a76f4249044ff918943351f4496a901",
+  "ordered_logical_sha256": "ad6c52bbe2928f686cf40692feaa397235b5187862db6f8513f75b30eaf87113",
+  "report_button": {
+    "scheme": "file",
+    "filename": "1876_运行报告.html",
+    "opens_start_time_output": true
+  },
+  "sqlite_connection_policy": "contextlib.closing closes every connection and cursor before temporary cleanup",
+  "comparison_policy": "Compare CSV bytes, ordered SQL rows and logical hashes; do not require equal SQLite file hashes."
+}

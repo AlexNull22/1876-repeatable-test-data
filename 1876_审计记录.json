@@ -1,0 +1,244 @@
+{
+  "schema_version": 1,
+  "generator_version": "1.0",
+  "status": "complete",
+  "dataset_id": "demo-orders",
+  "seed": 20261019,
+  "rows": 10000,
+  "unique_ids": 10000,
+  "sqlite_rows": 10000,
+  "verified_matches": 10000,
+  "verified_cells": 80000,
+  "ordered_logical_sha256": "ad6c52bbe2928f686cf40692feaa397235b5187862db6f8513f75b30eaf87113",
+  "preview": [
+    {
+      "id": "f36dfe43-522e-5d64-a110-0b7c527f311a",
+      "record_index": "1",
+      "order_number": "100001",
+      "region": "South",
+      "quantity": "38",
+      "unit_price": "451.86",
+      "order_date": "2026-06-30",
+      "active": "1"
+    },
+    {
+      "id": "9bd2fb7e-9a9a-5ef3-a20c-40f0d6c26f1c",
+      "record_index": "2",
+      "order_number": "100002",
+      "region": "East",
+      "quantity": "28",
+      "unit_price": "149.20",
+      "order_date": "2026-09-20",
+      "active": "0"
+    },
+    {
+      "id": "c230c6dc-c1b0-5360-a798-95a931fab496",
+      "record_index": "3",
+      "order_number": "100003",
+      "region": "West",
+      "quantity": "35",
+      "unit_price": "457.70",
+      "order_date": "2026-01-08",
+      "active": "1"
+    },
+    {
+      "id": "918e53aa-b478-5aab-ac99-f8114685c64a",
+      "record_index": "4",
+      "order_number": "100004",
+      "region": "North",
+      "quantity": "23",
+      "unit_price": "136.71",
+      "order_date": "2026-04-28",
+      "active": "1"
+    },
+    {
+      "id": "660dd905-fb94-55d9-b702-06c85861dd49",
+      "record_index": "5",
+      "order_number": "100005",
+      "region": "West",
+      "quantity": "38",
+      "unit_price": "55.89",
+      "order_date": "2026-01-04",
+      "active": "1"
+    },
+    {
+      "id": "2aad9cfa-6736-5fdf-b443-4f427ece0488",
+      "record_index": "6",
+      "order_number": "100006",
+      "region": "North",
+      "quantity": "39",
+      "unit_price": "396.63",
+      "order_date": "2026-10-15",
+      "active": "1"
+    },
+    {
+      "id": "41334a6f-0956-5919-a710-3821a5fc7cfc",
+      "record_index": "7",
+      "order_number": "100007",
+      "region": "South",
+      "quantity": "4",
+      "unit_price": "332.30",
+      "order_date": "2026-02-25",
+      "active": "1"
+    },
+    {
+      "id": "6be93da3-9716-566a-a84d-cfb698eb8f60",
+      "record_index": "8",
+      "order_number": "100008",
+      "region": "South",
+      "quantity": "30",
+      "unit_price": "60.19",
+      "order_date": "2026-01-18",
+      "active": "1"
+    },
+    {
+      "id": "b97a3ffb-21a9-55e6-a14d-4ba4bc0fecc9",
+      "record_index": "9",
+      "order_number": "100009",
+      "region": "West",
+      "quantity": "46",
+      "unit_price": "107.20",
+      "order_date": "2026-07-30",
+      "active": "1"
+    },
+    {
+      "id": "a8038ad5-ccc7-5cb8-b96e-a6ac93dd121e",
+      "record_index": "10",
+      "order_number": "100010",
+      "region": "South",
+      "quantity": "11",
+      "unit_price": "420.69",
+      "order_date": "2026-03-23",
+      "active": "1"
+    },
+    {
+      "id": "5bf86657-a04b-5656-8af8-7dd69929ce8f",
+      "record_index": "11",
+      "order_number": "100011",
+      "region": "East",
+      "quantity": "42",
+      "unit_price": "282.78",
+      "order_date": "2026-05-16",
+      "active": "1"
+    },
+    {
+      "id": "1af52f65-856f-5f84-a1e6-f45790325b75",
+      "record_index": "12",
+      "order_number": "100012",
+      "region": "East",
+      "quantity": "11",
+      "unit_price": "289.54",
+      "order_date": "2026-02-23",
+      "active": "1"
+    }
+  ],
+  "fields": [
+    {
+      "name": "order_number",
+      "type": "sequence",
+      "start": 100001,
+      "step": 1
+    },
+    {
+      "name": "region",
+      "type": "choice",
+      "values": [
+        "North",
+        "South",
+        "East",
+        "West"
+      ]
+    },
+    {
+      "name": "quantity",
+      "type": "integer",
+      "min": 1,
+      "max": 50
+    },
+    {
+      "name": "unit_price",
+      "type": "decimal",
+      "min": "5.00",
+      "max": "499.99",
+      "places": 2
+    },
+    {
+      "name": "order_date",
+      "type": "date",
+      "min": "2026-01-01",
+      "max": "2026-10-19"
+    },
+    {
+      "name": "active",
+      "type": "boolean",
+      "true_probability": "0.8"
+    }
+  ],
+  "source_config": "1876_示例配置.json",
+  "source_config_sha256": "7c17e83c44aa6c98d92ad812f64e8501bb9b7c01c447c6fbc13a0032709dc430",
+  "canonical_config_sha256": "2c0a5b49160cbff36039860c720467dc5db8d032f43f25f79d1ab7124b6fda13",
+  "config": {
+    "version": 1,
+    "dataset_id": "demo-orders",
+    "seed": 20261019,
+    "rows": 10000,
+    "fields": [
+      {
+        "name": "order_number",
+        "type": "sequence",
+        "start": 100001,
+        "step": 1
+      },
+      {
+        "name": "region",
+        "type": "choice",
+        "values": [
+          "North",
+          "South",
+          "East",
+          "West"
+        ]
+      },
+      {
+        "name": "quantity",
+        "type": "integer",
+        "min": 1,
+        "max": 50
+      },
+      {
+        "name": "unit_price",
+        "type": "decimal",
+        "min": "5.00",
+        "max": "499.99",
+        "places": 2
+      },
+      {
+        "name": "order_date",
+        "type": "date",
+        "min": "2026-01-01",
+        "max": "2026-10-19"
+      },
+      {
+        "name": "active",
+        "type": "boolean",
+        "true_probability": "0.8"
+      }
+    ]
+  },
+  "id_rule": {
+    "algorithm": "UUIDv5",
+    "namespace": "6ba7b811-9dad-11d1-80b4-00c04fd430c8",
+    "identity": "Compact UTF-8 JSON array [1876-id-v1, dataset_id, seed, 1-based record_index]",
+    "scope": "Same dataset_id, seed, and record_index yield the same ID. Field order and row count do not affect IDs.",
+    "purpose": "Synthetic database identifiers; not security tokens."
+  },
+  "outputs": {
+    "csv": "1876_测试数据.csv",
+    "sqlite": "1876_测试数据.sqlite",
+    "json": "1876_审计记录.json",
+    "html": "1876_运行报告.html"
+  },
+  "csv_sha256": "32f401e7133a357171bf53977a00ab667a76f4249044ff918943351f4496a901",
+  "sqlite_sha256": "b12283dbffb3106f35b1b5c0ebd0e0d88c58903ca6360cfff4482bc728bb6857",
+  "generated_at": "2026-10-19T08:17:51+00:00"
+}
